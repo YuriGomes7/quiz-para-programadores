@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz para Programadores</title>
+
+    <meta name="description"
+        content="Quiz interativo para testar seus conhecimentos sobre programação.">
+
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="header">
+
+        <div class="container">
+
+            <span class="tag">DESAFIO DE PROGRAMAÇÃO</span>
+
+            <h1>Quiz para Programadores</h1>
+
+            <p>
+                Teste seus conhecimentos em programação
+                e descubra quantos pontos você consegue fazer.
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <main class="container">
+
+        <!-- INTRODUÇÃO -->
+        <section class="card">
+
+            <span class="section-number">01</span>
+
+            <h2>Sobre este quiz</h2>
+
+            <p>
+                Este quiz foi desenvolvido para testar seus conhecimentos
+                sobre <strong>programação</strong>, linguagens e conceitos
+                básicos do desenvolvimento web.
+            </p>
+
+            <p>
+                Escolha uma resposta para cada pergunta.
+                Ao responder, você verá imediatamente se acertou ou errou.
+            </p>
+
+            <p>
+                O quiz aborda conceitos de
+                <abbr title="HyperText Markup Language">HTML</abbr>,
+                <abbr title="Cascading Style Sheets">CSS</abbr> e
+                JavaScript.
+            </p>
+
+        </section>
+
+
+        <!-- PERGUNTA 1 -->
+        <section class="card pergunta" data-resposta="HTML">
+
+            <span class="section-number">02</span>
+
+            <h2>
+                1. Qual linguagem é utilizada para estruturar páginas web?
+            </h2>
+
+            <div class="opcoes">
+
+                <button class="opcao" data-resposta="Python">
+                    Python
+                </button>
+
+                <button class="opcao" data-resposta="HTML">
+                    HTML
+                </button>
+
+                <button class="opcao" data-resposta="JavaScript">
+                    JavaScript
+                </button>
+
+                <button class="opcao" data-resposta="Ruby">
+                    Ruby
+                </button>
+
+            </div>
+
+            <p class="feedback"></p>
+
+        </section>
+
+
+        <!-- PERGUNTA 2 -->
+        <section class="card pergunta" data-resposta="Domínio">
+
+            <span class="section-number">03</span>
+
+            <h2>
+                2. Na URL https://www.google.com,
+                o trecho "google.com" é o quê?
+            </h2>
+
+            <input
+                type="text"
+                class="resposta-texto"
+                placeholder="Digite sua resposta..."
+            >
+
+            <button class="btn-responder">
+                Responder
+            </button>
+
+            <p class="feedback"></p>
+
+        </section>
+
+
+        <!-- PERGUNTA 3 -->
+        <section class="card pergunta" data-resposta="senha">
+
+            <span class="section-number">04</span>
+
+            <h2>
+                3. Qual das opções representa uma senha forte?
+            </h2>
+
+            <div class="opcoes">
+
+                <button class="opcao" data-resposta="123456">
+                    123456
+                </button>
+
+                <button class="opcao" data-resposta="senha123">
+                    senha123
+                </button>
+
+                <button class="opcao" data-resposta="senha">
+                    J7#mP9!xQ2
+                </button>
+
+                <button class="opcao" data-resposta="abcdef">
+                    abcdef
+                </button>
+
+            </div>
+
+            <p class="feedback"></p>
+
+        </section>
+
+
+        <!-- PERGUNTA 4 -->
+        <section class="card pergunta" data-resposta="1991">
+
+            <span class="section-number">05</span>
+
+            <h2>
+                4. Em que ano o HTML teve sua primeira versão?
+            </h2>
+
+            <div class="opcoes">
+
+                <button class="opcao" data-resposta="1985">
+                    1985
+                </button>
+
+                <button class="opcao" data-resposta="1991">
+                    1991
+                </button>
+
+                <button class="opcao" data-resposta="1999">
+                    1999
+                </button>
+
+                <button class="opcao" data-resposta="2005">
+                    2005
+                </button>
+
+            </div>
+
+            <p class="feedback"></p>
+
+        </section>
+
+
+        <!-- PERGUNTA 5 -->
+        <section class="card pergunta" data-resposta="JavaScript,Java">
+
+            <span class="section-number">06</span>
+
+            <h2>
+                5. Quais destas tecnologias são linguagens de programação?
+            </h2>
+
+            <div class="checkbox-group">
+
+                <label>
+                    <input type="checkbox" value="HTML">
+                    HTML
+                </label>
+
+                <label>
+                    <input type="checkbox" value="JavaScript">
+                    JavaScript
+                </label>
+
+                <label>
+                    <input type="checkbox" value="CSS">
+                    CSS
+                </label>
+
+                <label>
+                    <input type="checkbox" value="Java">
+                    Java
+                </label>
+
+            </div>
+
+            <button class="btn-responder">
+                Responder
+            </button>
+
+            <p class="feedback"></p>
+
+        </section>
+
+
+        <!-- PERGUNTA 6 -->
+        <section class="card pergunta">
+
+            <span class="section-number">07</span>
+
+            <h2>
+                6. Faça o upload de um arquivo contendo código HTML.
+            </h2>
+
+            <input
+                type="file"
+                id="arquivoHTML"
+            >
+
+            <p class="feedback"></p>
+
+        </section>
+
+
+        <!-- PERGUNTA 7 -->
+        <section class="card pergunta" data-resposta="type">
+
+            <span class="section-number">08</span>
+
+            <h2>
+                7. Qual atributo do input define o seu tipo?
+            </h2>
+
+            <select class="select-resposta">
+
+                <option value="">
+                    Selecione uma opção
+                </option>
+
+                <option value="id">
+                    id
+                </option>
+
+                <option value="type">
+                    type
+                </option>
+
+                <option value="placeholder">
+                    placeholder
+                </option>
+
+            </select>
+
+            <button class="btn-responder">
+                Responder
+            </button>
+
+            <p class="feedback"></p>
+
+        </section>
+
+
+        <!-- PERGUNTA 8 -->
+        <section class="card pergunta" data-resposta="JavaScript">
+
+            <span class="section-number">09</span>
+
+            <h2>
+                8. Qual linguagem de programação é representada
+                pelo logotipo abaixo?
+            </h2>
+
+            <figure>
+
+                <img
+                    src="JavaScript.png"
+                    alt="Logotipo do JavaScript"
+                    class="logo-language"
+                >
+
+                <figcaption>
+                    Figura 1 — Logotipo de uma linguagem de programação.
+                </figcaption>
+
+            </figure>
+
+            <input
+                type="text"
+                class="resposta-texto"
+                placeholder="Digite sua resposta..."
+            >
+
+            <button class="btn-responder">
+                Responder
+            </button>
+
+            <p class="feedback"></p>
+
+        </section>
+
+
+        <!-- TABELA -->
+        <section class="card">
+
+            <span class="section-number">10</span>
+
+            <h2>Tabela de Pontuação</h2>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Pontuação</th>
+                            <th>Avaliação</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>0–2</td>
+                            <td>
+                                Não desista! Cada tentativa é uma
+                                oportunidade para aprender.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>3–4</td>
+                            <td>
+                                Você ainda precisa melhorar.
+                                Continue estudando.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>5–7</td>
+                            <td>
+                                Bom! Seu conhecimento está satisfatório.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>8</td>
+                            <td>
+                                Perfeito! Excelente conhecimento.
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- RESULTADO -->
+        <section class="resultado" id="resultado">
+
+            <h2>Seu resultado</h2>
+
+            <p id="pontuacao">
+                Responda às perguntas para descobrir sua pontuação.
+            </p>
+
+            <button id="reiniciar">
+                Reiniciar Quiz
+            </button>
+
+        </section>
+
+
+        <!-- FEEDBACK -->
+        <section class="card">
+
+            <span class="section-number">11</span>
+
+            <h2>Envie seu feedback</h2>
+
+            <p>
+                Conte para nós o que achou do quiz.
+            </p>
+
+            <form>
+
+                <fieldset>
+
+                    <legend>Informações de contato</legend>
+
+                    <label for="nome">
+                        Nome
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nome"
+                        placeholder="Digite seu nome"
+                    >
+
+                    <label for="email">
+                        E-mail
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Digite seu e-mail"
+                    >
+
+                    <label for="comentario">
+                        Comentário
+                    </label>
+
+                    <textarea
+                        id="comentario"
+                        rows="5"
+                        placeholder="Digite seu comentário..."
+                    ></textarea>
+
+                    <button
+                        type="button"
+                        onclick="enviarFeedback()"
+                    >
+                        Enviar feedback
+                    </button>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>
+                Quiz para Programadores
+            </p>
+
+            <p>
+                © 2026 Yuri Gomes. Todos os direitos reservados.
+            </p>
+
+            <a href="Sobremim.html" target="_blank">
+                Conheça mais sobre mim →
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
